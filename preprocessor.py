@@ -5,7 +5,7 @@ region_df=pd.read_csv(r'https://drive.google.com/file/d/13epMolX7mrWfTqpwWNKAmUY
 
 def preprocess(df,region_df):
 
-    df = df[df['Season'] == 'Summer']
+    #df = df[df['Season'] == 'Summer']
 
     df = df.merge(region_df, on='NOC', how='left')
 
