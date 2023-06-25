@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
 
-df=pd.read_csv(r'https://drive.google.com/file/d/1k8zhTyDeY_O9R9GF7uPhsETTs6wRcFll/view?usp=drive_link')
-region_df=pd.read_csv(r'https://drive.google.com/file/d/13epMolX7mrWfTqpwWNKAmUYrjYShaExN/view?usp=drive_link')
+df=pd.read_csv(r'https://drive.google.com/file/d/1k8zhTyDeY_O9R9GF7uPhsETTs6wRcFll/view?usp=drive_link',error_bad_lines=False)
+region_df=pd.read_csv(r'https://drive.google.com/file/d/13epMolX7mrWfTqpwWNKAmUYrjYShaExN/view?usp=drive_link',error_bad_lines=False)
 
 df = preprocessor.preprocess(df,region_df)
 
