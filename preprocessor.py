@@ -11,5 +11,5 @@ def preprocess(df,region_df):
 
     df.drop_duplicates(inplace=True)
     #one hot encoding medals
-    df = pd.concat([df, pd.get_dummies(df['Medal'])], axis=1)
+    #df = pd.concat([df, pd.get_dummies(df['Medal'])], axis=1)
     return df
