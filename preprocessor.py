@@ -1,7 +1,7 @@
 import pandas as pd
 
-df=pd.read_csv(r'C:\Users\Niraj Patil\OneDrive\Desktop\AllAboutOlympics\athlete_events.csv')
-region_df=pd.read_csv(r'C:\Users\Niraj Patil\OneDrive\Desktop\AllAboutOlympics\noc_regions.csv')
+df=pd.read_csv(r'athlete_events.csv')
+region_df=pd.read_csv(r'noc_regions.csv')
 
 def preprocess(df,region_df):
 
